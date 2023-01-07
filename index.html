@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio v1</title>
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #d0c3f1;
+        }
+        #sky{
+            background-image: url("/images/night-sky.svg");
+
+            height: 880px;
+            /* width: 100%; */
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        #title{
+            margin: 0;
+            padding: 0;
+
+            text-align: center;
+            font-size: 35px;
+
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #name{
+            font-family: 'Poppins', sans-serif;
+            
+            text-align: center;
+            font-size: 50px;
+        }
+
+
+        #main-container{
+            display: flex;
+            
+            justify-content: space-evenly;
+        }
+
+        #container1, #container2, #container3{
+            display: flex;
+            flex-direction: column;
+            margin: 10%;
+            justify-content: space-evenly;
+        }
+
+        .item{
+            justify-content: space-evenly;
+            text-align: center;
+
+            width: 45%;
+            height: 15%;
+
+            background-color: white;
+            border: 2px solid #cadefc;
+            border-radius: 12px;
+        }
+
+        #one, #two, #three, #four, #five, #six, #seven, #eight, #nine{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            text-align: center;
+            
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sky">
+        <h1 id="title">Portfolio</h1>
+    </div>
+
+        <p id="name">Luisa Rubio Alvarado</p>
+
+    <div id="main-container">
+
+        <div id="container1">
+            <div id="one" class="item" onmouseover="one()" onmouseout="one1()">
+                <img id="gif1" src="/images/profile.gif" alt="Profile" style="width: 50px;">
+                <img id="img1" src="/images/profile.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/resume/">Resume</a>
+            </div>
+            <div id="two" class="item" onmouseover="two()" onmouseout="two2()">
+                <img id="gif2" src="/images/calculator.gif" alt="Profile" style="width: 50px;">
+                <img id="img2" src="/images/calculator.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/calculator/">Calculator</a>
+            </div>
+            <div id="three" class="item" onmouseover="three()" onmouseout="three3()">
+                <img id="gif3" src="/images/notebook.gif" alt="Profile" style="width: 50px;">
+                <img id="img3" src="/images/notebook.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/quiz/">Quiz</a>
+            </div>
+        </div>
+
+        <div id="container2">
+            <div id="four" class="item" onmouseover="four()" onmouseout="four4()">
+                <img id="gif4" src="/images/arcade-machine.gif" alt="Profile" style="width: 50px;">
+                <img id="img4" src="/images/arcade-machine.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/shell-game/">Game</a>
+            </div>
+            <div id="five" class="item" onmouseover="five()" onmouseout="five5()">
+                <img id="gif5" src="/images/video.gif" alt="Profile" style="width: 50px;">
+                <img id="img5" src="/images/video.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/animation/">Animation</a>
+            </div>
+            <div id="six" class="item" onmouseover="six()" onmouseout="six6()">
+                <img id="gif6" src="/images/photo-gallery.gif" alt="Profile" style="width: 50px;">
+                <img id="img6" src="/images/photo-gallery.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/collage/">Gallery</a>
+            </div>
+        </div>
+
+        <div id="container3">
+            <div id="seven" class="item" onmouseover="seven()" onmouseout="seven7()">
+                <img id="gif7" src="/images/notebook (1).gif" alt="Profile" style="width: 50px;">
+                <img id="img7" src="/images/notebook (1).png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/flexbox-temp/">Template</a>
+            </div>
+            <div id="eight" class="item" onmouseover="eight()" onmouseout="eight8()">
+                <img id="gif8" src="/images/payment.gif" alt="Profile" style="width: 50px;">
+                <img id="img8" src="/images/payment.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/form2/">Form</a>
+            </div>
+            <div id="nine" class="item" onmouseover="nine()" onmouseout="nine9()">
+                <img id="gif9" src="/images/clipboard.gif" alt="Profile" style="width: 50px;">
+                <img id="img9" src="/images/clipboard.png" alt="Profile" style="width: 50px; display: none;">
+                <a href="https://lrubioa.github.io/jQuery-site/">jQuery</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        function one(){
+            document.getElementById("gif1").style.display = "none"
+            document.getElementById("img1").style.display = "initial"
+        }
+        function one1(){
+            document.getElementById("gif1").style.display = "initial"
+            document.getElementById("img1").style.display = "none"
+        }
+
+
+        function two(){
+            document.getElementById("gif2").style.display = "none"
+            document.getElementById("img2").style.display = "initial"
+        }
+        function two2(){
+            document.getElementById("gif2").style.display = "initial"
+            document.getElementById("img2").style.display = "none"
+        }
+
+
+        function three(){
+            document.getElementById("gif3").style.display = "none"
+            document.getElementById("img3").style.display = "initial"
+        }
+        function three3(){
+            document.getElementById("gif3").style.display = "initial"
+            document.getElementById("img3").style.display = "none"
+        }
+
+
+        function four(){
+            document.getElementById("gif4").style.display = "none"
+            document.getElementById("img4").style.display = "initial"
+        }
+        function four4(){
+            document.getElementById("gif4").style.display = "initial"
+            document.getElementById("img4").style.display = "none"
+        }
+
+
+        function five(){
+            document.getElementById("gif5").style.display = "none"
+            document.getElementById("img5").style.display = "initial"
+        }
+        function five5(){
+            document.getElementById("gif5").style.display = "initial"
+            document.getElementById("img5").style.display = "none"
+        }
+
+
+        function six(){
+            document.getElementById("gif6").style.display = "none"
+            document.getElementById("img6").style.display = "initial"
+        }
+        function six6(){
+            document.getElementById("gif6").style.display = "initial"
+            document.getElementById("img6").style.display = "none"
+        }
+
+        
+        function seven(){
+            document.getElementById("gif7").style.display = "none"
+            document.getElementById("img7").style.display = "initial"
+        }
+        function seven7(){
+            document.getElementById("gif7").style.display = "initial"
+            document.getElementById("img7").style.display = "none"
+        }
+        
+
+        function eight(){
+            document.getElementById("gif8").style.display = "none"
+            document.getElementById("img8").style.display = "initial"
+        }
+        function eight8(){
+            document.getElementById("gif8").style.display = "initial"
+            document.getElementById("img8").style.display = "none"
+        }
+        
+
+        function nine(){
+            document.getElementById("gif9").style.display = "none"
+            document.getElementById("img9").style.display = "initial"
+        }
+        function nine9(){
+            document.getElementById("gif9").style.display = "initial"
+            document.getElementById("img9").style.display = "none"
+        }
+    </script>
+</body>
+</html>
